@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter-Tour</title>
+    <link rel="icon" href="image/earth.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <span><a href="../site.html">Inter-Tour</a></span>
+        </div>
+        <div id="about">
+            <div id="dropdown-nav">
+                <button class="navigation">Навигация</button>
+                <div id="dropdown-menu">
+                    <a href="../Tours/site.html">Туры</a>
+                    <a href="../Feedback/site.html">Отзывы</a>
+                    <a href="../About/site.html">О нас</a>
+                    <a href="../Sign/Registration.html">Регистрация</a>
+                    <a href="../Sign/site.html">Вход</a>
+                </div>
+            </div>
+            <div id="navbar">
+                <div id="dropdown">
+                    <button id="dropbtn"><a href="../Tours/site.html">Туры</a></button>
+                    <div id="dropdown-content">
+                        <a href="razrabotka.html">Кишинев</a><br>
+                        <a href="razrabotka.html">Орхей</a><br>
+                        <a href="razrabotka.html">Усадьба Мими</a><br>
+                        <a href="razrabotka.html">Приднестровье</a><br>
+                        <a href="Gagauz.html">Гагаузия</a><br>
+                    </div>
+                </div>
+                <a id="nav-item" href="../Feedback/site.html">Отзывы</a>
+                <a id="nav-item" href="../About/site.html">О нас</a>
+            </div>
+        </div>
+        <a id="nav-item-sign" href="../Sign/site.html"><button id="signin">Войти</button></a>
+    </header>
+
+    <div id="tour">
+        <h1>Направления</h1>
+        <div class="container">
+            <div class="container1">
+            <div class="text-column">
+              <h2>Кишинев</h2>
+              <p>Столица Молдовы, Кишинев, впечатляет своими парками, бульварами и архитектурой. 
+                Посетите знаковые достопримечательности, такие как площадь Победы, кафедральный собор, 
+                а также насладитесь атмосферой уютных кафе и ресторанов.</p>
+              <a class="btn btn-secondary" href="razrabotka.html">Подробнее</a>
+            </div>
+            <div class="image-column">
+                <div class="slider" id="slider1" onmouseover="startSlider('slider1')" onmouseout="stopSlider('slider1')">
+                    <img src="image/kiv01.jpg" alt="Изображение 1">
+                    <img src="image/kiv02.jpg" alt="Изображение 2">
+                    <img src="image/kiv03.jpg" alt="Изображение 3">
+                    <img src="image/kiv04.jpg" alt="Изображение 4">
+                    <img src="image/kiv05.jpg" alt="Изображение 5">
+                  </div>
+            </div>  
+          </div>
+          <div class="container2">
+            <div class="image-column">
+                <div class="slider" id="slider2" onmouseover="startSlider('slider2')" onmouseout="stopSlider('slider2')">
+                    <img src="image/orh01.jpg" alt="Изображение 1">
+                    <img src="image/orh02.jpg" alt="Изображение 2">
+                    <img src="image/orh03.jpg" alt="Изображение 3">
+                    <img src="image/orh04.jpg" alt="Изображение 4">
+                    <img src="image/orh05.jpg" alt="Изображение 5">
+                  </div>
+            </div>
+            <div class="text-column">
+              <h2>Орхей</h2>
+              <p>Исторический город Орхей, включенный в список Всемирного наследия ЮНЕСКО, 
+                известен своими средневековыми крепостями и монастырями. 
+                Посетите Орхейский национальный музей-заповедник и увидьте великолепные архитектурные сооружения прошлых веков.</p>
+              <a class="btn btn-secondary" href="razrabotka.html">Подробнее</a>
+            </div>   
+          </div>
+          <div class="container1">
+            <div class="text-column">
+              <h2>Усадьба Мими</h2>
+              <p>Усадьба семьи Мими (теперь, после реконструкции, известная также как Замок Мими) 
+                - это памятник национальной архитектуры, расположенный в поселке Булбока, Анены Ной (Молдова).
+            Там вы можете почувствовать себя важным членом знати.</p>
+              <a class="btn btn-secondary" href="razrabotka.html">Подробнее</a>
+            </div>
+            <div class="image-column">
+                <div class="slider" id="slider3" onmouseover="startSlider('slider3')" onmouseout="stopSlider('slider3')">
+                    <img src="image/mimi01.jpg" alt="Изображение 1">
+                    <img src="image/mimi02.jpg" alt="Изображение 2">
+                    <img src="image/mimi03.jpg" alt="Изображение 3">
+                    <img src="image/mimi04.jpg" alt="Изображение 4">
+                    <img src="image/mimi05.jpg" alt="Изображение 5">
+                  </div>
+            </div>  
+          </div>
+          <div class="container2">
+            <div class="image-column">
+                <div class="slider" id="slider4" onmouseover="startSlider('slider4')" onmouseout="stopSlider('slider4')">
+                    <img src="image/prdn01.jpg" alt="Изображение 1">
+                    <img src="image/prdn02.jpg" alt="Изображение 2">
+                    <img src="image/prdn03.jpg" alt="Изображение 3">
+                    <img src="image/prdn04.jpg" alt="Изображение 4">
+                    <img src="image/prdn05.jpg" alt="Изображение 5">
+                  </div>
+            </div>
+            <div class="text-column">
+              <h2>Приднестровье</h2>
+              <p> Расположенное на востоке Молдовы Приднестровье – представляет собой непризнанную территорию, которая предлагает
+                 уникальную возможность познакомиться с альтернативной культурой и политической ситуацией.
+                 Исследуйте Бендерскую крупостьи прогуляйтесь по улицам Тирасполя с оглядкой на советские времена.</p>
+                 <a class="btn btn-secondary" href="razrabotka.html">Подробнее</a>
+            </div>   
+          </div>
+          <div class="container1">
+            <div class="text-column">
+              <h2>Гагаузия</h2>
+              <p> Гагаузия – это автономная территория,
+                 где проживают гагаузы, тюркское население с уникальными обычаями и традициями. 
+                 Откройте для себя гагаузскую культуру, посетите музеи, национальные парки и насладитесь</p>
+              <a class="btn btn-secondary" href="Gagauz.html">Подробнее</a>
+            </div>
+            <div class="image-column">
+                <div class="slider" id="slider5" onmouseover="startSlider('slider5')" onmouseout="stopSlider('slider5')">
+                    <img src="image/gagauz01.jpg" alt="Изображение 1">
+                    <img src="image/gagauz02.jpg" alt="Изображение 2">
+                    <img src="image/gagauz03.jpg" alt="Изображение 3">
+                    <img src="image/gagauz04.jpg" alt="Изображение 4">
+                    <img src="image/gagauz05.jpg" alt="Изображение 5">
+                  </div>
+            </div>  
+          </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+
+        <div class="footer-left">
+            <h3>Inter-Tour </h3><br>
+            <p class="footer-company-name">Inter-Tour&copy; 2021</p><br>
+            <div id="ontop" onclick="slowScroll('#tour')">
+                <p onclick="slowScroll('#tour')">ON TOP</p>
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <div class="map">
+                <img src="image/map.png" class="image">
+                <p>Республика Молдова<br> г.Кишинев
+                    <br> ул.Пушкина 28
+                </p>
+            </div>
+            <div class="phone">
+                <img src="image/phone.png" class="image">
+                <p>+373 (022)864 511</p>
+            </div>
+            <div class="mail">
+                <img src="image/mail.png" class="image">
+                <p>inter-tour.gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-net">
+                <span>Соц сети</span> Также вы можете следить за новостями в следующих соц сетях
+            </p>
+
+            <div class="footer-icons">
+                <a class="facebook" href="https://www.facebook.com"><img src="image/facebook.png" class="image"></a>
+                <a class="instagram" href="https://www.instagram.com"><img src="image/inst.png" class="image"></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        $(document).on("scroll", function() {
+            if ($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+
+        function slowScroll(ontop) {
+            $('html,body').animate({
+                scrollTop: $(ontop).offset().top
+            }, 500);
+        }
+            //slider
+            let timeouts = {};
+
+function showSlide(sliderId, n) {
+  const slider = document.getElementById(sliderId);
+  const slides = slider.querySelectorAll("img");
+
+  slides.forEach((slide) => slide.classList.remove("active"));
+  slides[n].classList.add("active");
+}
+
+function startSlider(sliderId) {
+  const slider = document.getElementById(sliderId);
+  const slides = slider.querySelectorAll("img");
+  let currentSlide = 0;
+
+  function showNextSlide() {
+    showSlide(sliderId, currentSlide);
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    timeouts[sliderId] = setTimeout(showNextSlide, 2000); // Измените время задержки (ms) по вашему усмотрению
+  }
+
+  timeouts[sliderId] = setTimeout(showNextSlide, 0); // Запуск слайдера сразу
+}
+
+function stopSlider(sliderId) {
+  clearTimeout(timeouts[sliderId]);
+}
+
+function handleMouseEnter(sliderId) {
+  stopSlider(sliderId);
+  startSlider(sliderId);
+}
+
+function handleMouseLeave(sliderId) {
+  stopSlider(sliderId);
+}
+
+showSlide("slider1", 0); // Отображение первого слайда для slider1
+showSlide("slider2", 0); // Отображение первого слайда для slider2
+showSlide("slider3", 0); // Отображение первого слайда для slider3
+showSlide("slider4", 0); // Отображение первого слайда для slider4
+showSlide("slider5", 0); // Отображение первого слайда для slider5
+
+const slider1 = document.getElementById("slider1");
+slider1.addEventListener("mouseenter", () => handleMouseEnter("slider1"));
+slider1.addEventListener("mouseleave", () => handleMouseLeave("slider1"));
+
+const slider2 = document.getElementById("slider2");
+slider2.addEventListener("mouseenter", () => handleMouseEnter("slider2"));
+slider2.addEventListener("mouseleave", () => handleMouseLeave("slider2"));
+
+const slider3 = document.getElementById("slider3");
+slider3.addEventListener("mouseenter", () => handleMouseEnter("slider3"));
+slider3.addEventListener("mouseleave", () => handleMouseLeave("slider3"));
+
+const slider4 = document.getElementById("slider4");
+slider4.addEventListener("mouseenter", () => handleMouseEnter("slider4"));
+slider4.addEventListener("mouseleave", () => handleMouseLeave("slider4"));
+
+const slider5 = document.getElementById("slider5");
+slider5.addEventListener("mouseenter", () => handleMouseEnter("slider5"));
+slider5.addEventListener("mouseleave", () => handleMouseLeave("slider5"));
+    </script>
+</body>
+
+</html>

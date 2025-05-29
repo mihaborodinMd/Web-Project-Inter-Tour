@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter-Tour</title>
+    <link rel="icon" href="image/earth.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <span><a href="../site.html">Inter-Tour</a></span>
+        </div>
+
+        <div id="about">
+            <div id="dropdown-nav">
+                <button class="navigation">Навигация</button>
+                <div id="dropdown-menu">
+                    <a href="../Tours/site.html">Туры</a>
+                    <a href="../Feedback/site.html">Отзывы</a>
+                    <a href="../About/site.html">О нас</a>
+                    <a href="../Sign/Registration.html">Регистрация</a>
+                    <a href="../Sign/site.html">Вход</a>
+                </div>
+            </div>
+
+            <div id="navbar">
+                <div id="dropdown">
+                    <button id="dropbtn"><a href="../Tours/site.html">Туры</a></button>
+                    <div id="dropdown-content">
+                        <a href="../Tours/razrabotka.html">Кишинев</a><br>
+                        <a href="../Tours/razrabotka.html">Орхей</a><br>
+                        <a href="../Tours/razrabotka.html">Усадьба Мими</a><br>
+                        <a href="../Tours/razrabotka.html">Приднестровье</a><br>
+                        <a href="../Tours/Gagauz.html">Гагаузия</a><br>
+                    </div>
+                </div>
+                <a id="nav-item" href="../Feedback/site.html">Отзывы</a>
+                <a id="nav-item" href="../About/site.html">О нас</a>
+            </div>
+        </div>
+        <a id="nav-item-sign" href="../Sign/site.html"><button id="signin">Войти</button></a>
+    </header>
+    <div id="top">
+        <h1>О нас</h1>
+    </div>
+    <div class="row">
+            <div id="column1">
+                <h2>Inter-Tour</h2>
+                <h4>Мы молодая, амбициозная туристическая компания,
+     стремительно развивающиеся и успевшая реализовать множество туров
+     и зарекомендовать себя на туристическом рынке.
+     Наша туристическая фирма была основана в 2019 году, и уже в 2020 г.
+     Мы приняли участие в Международном туристическом салоне «World-Tourism 2020», 
+     а в 2021 г. участвовали в XIV Международной выставке 
+     «Global-Tour - путешествия и туризм». 
+     В 2021 году мы добились огромного успеха, получив аккредитацию 
+     в стран Шенгенской зоны, Азиатских странах,а также на территории Америки.
+     Основная миссия нашей компании- это создать для клиента сказочный отдых с улыбкой на лице.
+     На данном этапе деятельность нашей компании полностью направлена 
+     на разработку новых интересных маршрутов на территории Республики Молдова, определение и установление 
+     лучших цен на рынке, налаживание партнерских отношений в пределах
+     нашего государства и за границей.
+     Задачей для нас является стать «путеводной звездой» в мире туризма, 
+     подобрать для клиентов тур, который бы соответствовал всем его 
+     пожеланиям и возможностям. 
+
+
+По дополнительным вопросам можете обращаться в наш офис который отмечен на карте.</h4>
+</div>
+            <div id="column2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.811587675755!2d28.832926915050574!3d47.02430323601415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c341d2da079%3A0x49fe0879c2d2f853!2zU3RyYWRhIFB1yJlraW4gMjgsIENoaciZaW7Eg3UsINCc0L7Qu9C00LDQstC40Y8!5e0!3m2!1sru!2s!4v1622055673655!5m2!1sru!2s"width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+    </div>
+    
+    <footer class="footer">
+
+        <div class="footer-left">
+            <h3>Inter-Tour </h3><br>
+            <p class="footer-company-name">Inter-Tour&copy; 2021</p><br>
+            <div id="ontop" onclick="slowScroll('#top')">
+                <p onclick="slowScroll('#top')">ON TOP</p>
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <div class="map">
+                <img src="image/map.png" class="image">
+                <p>Республика Молдова<br> г.Кишинев
+                    <br> ул.Пушкина 28</p>
+            </div>
+            <div class="phone">
+                <img src="image/phone.png" class="image">
+                <p>+373 (022)864 511</p>
+            </div>
+            <div class="mail">
+                <img src="image/mail.png" class="image">
+                <p>inter-tour.gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-net">
+                <span>Соц сети</span> Также вы можете следить за новостями в следующих соц сетях
+            </p>
+
+            <div class="footer-icons">
+                <a class="facebook" href="https://www.facebook.com/"><img src="image/facebook.png" class="image"></a>
+                <a class="instagram" href="https://www.instagram.com/"><img src="image/inst.png" class="image"></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        $(document).on("scroll", function() {
+            if ($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+
+        function slowScroll(ontop) {
+            $('html,body').animate({
+                scrollTop: $(ontop).offset().top
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>

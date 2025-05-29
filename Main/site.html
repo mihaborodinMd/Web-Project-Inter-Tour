@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <link rel="icon" href="image/earth.png">
+    <title>Inter-Tour</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>Inter-Tour</span>
+        </div>
+        <div id="about">
+            <div id="dropdown-nav">
+                <button class="navigation">Навигация</button>
+                <div id="dropdown-menu">
+                    <a href="Tours/site.html">Туры</a>
+                    <a href="Feedback/site.html">Отзывы</a>
+                    <a href="About/site.html">О нас</a>
+                    <a href="Sign/site.html">Регистрация</a>
+                    <a href="Sign/site.html">Вход</a>
+
+                </div>
+            </div>
+
+            <div id="navbar">
+                <div id="dropdown">
+                    <button id="dropbtn"><a href="Tours/site.html">Туры</a></button>
+                    <div id="dropdown-content">
+                        <a href="Tours/razrabotka.html">Кишинев</a><br>
+                        <a href="Tours/razrabotka.html">Орхей</a><br>
+                        <a href="Tours/razrabotka.html">Усадьба Мими</a><br>
+                        <a href="Tours/razrabotka.html">Приднестровье</a><br>
+                        <a href="Tours/Gagauz.html">Гагаузия</a><br>
+                    </div>
+                </div>
+                <a id="nav-item" href="Feedback/site.html">Отзывы</a>
+                <a id="nav-item" href="About/site.html">О нас</a>
+
+            </div>
+        </div>
+        <a id="nav-item-sign" href="Sign/site.html"><button id="signin">Войти</button></a>
+    </header>
+    <div id="top">
+        <h1>Путешествовать</h1>
+        <h3>С нами легко!</h3>
+
+    </div>
+
+    <div id="main">
+        <div class="intro">
+            <h2>Не знаете где отдохнуть?</h2>
+            <span>Мы вам поможем!</span>
+        </div><br>
+        <div class="text">
+            <span>Обратитесь к нам и вы не пожалеете.Мы помогаем людям наполнить свою жизнь яркими эмоциями. Улыбка клиента для нас главное.
+            </span>
+        </div><br></div>
+    <div class="hot">
+        <h2>Горячие предложения</h2>
+    </div>
+
+    <div class="slider">
+        <div class="slide active">
+            <img src="image/sofrasi.jpg" alt="">
+            <div class="info">
+                <h2>Гагаузия</h2>
+                <p>Почувствуйте тепло и гостеприимство Гагаузкого народ <br> Всё это всего за<span> 40$ </span>на человека в день.</p>
+                <a class="btn btn-secondary" href="Tours/Gagauz.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="image/kiv.jpg" alt="">
+            <div class="info">
+                <h2>Кишинев</h2>
+                <p> Добро пожаловать в Кишинев, столицу Молдовы, где вы сможете насладиться красивыми парками, богатой историей и уникальным гостеприимством, а также открыть для себя вкуснейшие местные национальных кулинарных деликатесов. Цены стартуют всего
+                    от
+                    <span> 60$</span></p>
+                <a class="btn btn-secondary" href="Tours/razrabotka.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="image/orh.jpg" alt="">
+            <div class="info">
+                <h2>Орхей</h2>
+                <p>Старый Орхей — это удивительное историческое место на берегу реки Реут, расположенное в Молдове. Он привлекает туристов своей атмосферой древности. Здесь вы сможете ощутить дух прошлого,увидеть живописные руины и познакомиться с археологическими
+                    находками. Старый Орхей — это место, где история оживает перед вашими глазами всего за <span>35$ </span>на человека</p>
+                <a class="btn btn-secondary" href="Tours/razrabotka.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="image/brazil.jpg" alt="">
+            <div class="info">
+                <h2>Бразилия</h2>
+                <p>Вы давно не веселились, тогда бразилькие карнавалы будут вам по душе. Мы предлагаем отдых в Рио-де-Жанейро всего от <span>50$</span></p>
+                <a class="btn btn-secondary" href="Tours/razrabotka.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="image/greece.jpg" alt="">
+            <div class="info">
+                <h2>Греция</h2>
+                <p>Хотите погрузиться в мир древней архитектуры или может выпить вкуснейшего вина. Данные желания можно осуществить только лишь в Греции всего от <span>40$</span>
+                </p>
+                <a class="btn btn-secondary" href="Tours/razrabotka.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="arrows">
+            <i class="fas fa-chevron-left prev-btn"></i>
+            <i class="fas fa-chevron-right next-btn"></i>
+        </div>
+        <div class="navigation-visibility">
+            <div class="slide-icon active"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer-left">
+            <h3>Inter-Tour </h3><br>
+            <p class="footer-company-name">Inter-Tour&copy; 2021</p><br>
+            <div id="ontop">
+                <p onclick="slowScroll('#top')">ON TOP</p>
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <div class="map">
+                <img src="image/map.png" class="image">
+                <p>Республика Молдова<br> г.Кишинев
+                    <br> ул.Пушкина 28</p>
+            </div>
+            <div class="phone">
+                <img src="image/phone.png" class="image">
+                <p>+373 (022)864 511</p>
+            </div>
+            <div class="mail">
+                <img src="image/mail.png" class="image">
+                <p>inter-tour.gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-net">
+                <span>Соц сети</span> Также вы можете следить за новостями в следующих соц сетях
+            </p>
+
+            <div class="footer-icons">
+                <a class="facebook" href="https://www.facebook.com/"><img src="image/facebook.png" class="image"></a>
+                <a class="instagram" href="https://www.instagram.com/"><img src="image/inst.png" class="image"></a>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        //замена цветов  панели навигации 
+        $(document).on("scroll", function() {
+            if ($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+        //анимация медленного скольжения наверх при нажатии кнопки  
+        function slowScroll(id, ontop) {
+            $('html,body').animate({
+                scrollTop: $(id, ontop).offset().top
+            }, 500);
+        }
+    </script>
+
+    <script type="text/javascript">
+        const slider = document.querySelector(".slider");
+        const nextBtn = document.querySelector(".next-btn");
+        const prevBtn = document.querySelector(".prev-btn");
+        const slides = document.querySelectorAll(".slide");
+        const slideIcons = document.querySelectorAll(".slide-icon");
+        const numberOfSlides = slides.length;
+        var slideNumber = 0;
+
+        //показ следующей кнопки
+        nextBtn.addEventListener("click", () => {
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            slideIcons.forEach((slideIcon) => {
+                slideIcon.classList.remove("active");
+            });
+
+            slideNumber++;
+
+            if (slideNumber > (numberOfSlides - 1)) {
+                slideNumber = 0;
+            }
+
+            slides[slideNumber].classList.add("active");
+            slideIcons[slideNumber].classList.add("active");
+        });
+
+        //показ предыдущей кнопки
+        prevBtn.addEventListener("click", () => {
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            slideIcons.forEach((slideIcon) => {
+                slideIcon.classList.remove("active");
+            });
+
+            slideNumber--;
+
+            if (slideNumber < 0) {
+                slideNumber = numberOfSlides - 1;
+            }
+
+            slides[slideNumber].classList.add("active");
+            slideIcons[slideNumber].classList.add("active");
+        });
+
+        //автовоспроизведение
+        var playSlider;
+
+        var repeater = () => {
+            playSlider = setInterval(function() {
+                slides.forEach((slide) => {
+                    slide.classList.remove("active");
+                });
+                slideIcons.forEach((slideIcon) => {
+                    slideIcon.classList.remove("active");
+                });
+
+                slideNumber++;
+
+                if (slideNumber > (numberOfSlides - 1)) {
+                    slideNumber = 0;
+                }
+
+                slides[slideNumber].classList.add("active");
+                slideIcons[slideNumber].classList.add("active");
+            }, 8000);
+        }
+        repeater();
+
+        //остановка автовоспроизведения при наведенном курсоре
+        slider.addEventListener("mouseover", () => {
+            clearInterval(playSlider);
+        });
+
+        //возобновление автовоспроизведения при отсутствии наведенного курсора
+        slider.addEventListener("mouseout", () => {
+            repeater();
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter-Tour</title>
+    <link rel="icon" href="image/earth.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="util.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <span><a href="../site.html">Inter-Tour</a></span>
+        </div>
+        </div>
+        <div id="about">
+            <div id="dropdown-nav">
+                <button class="navigation">Навигация</button>
+                <div id="dropdown-menu">
+                    <a href="Tours/site.html">Туры</a>
+                    <a href="Feedback/site.html">Отзывы</a>
+                    <a href="About/site.html">О нас</a>
+                    <a href="Sign/site.html">Регистрация</a>
+                    <a href="Sign/site.html">Вход</a>
+                    
+                </div>
+            </div>
+
+            <div id="navbar">
+                <div id="dropdown">
+                    <button id="dropbtn"><a href="../Tours/site.html">Туры</a></button>
+                    <div id="dropdown-content">
+                    <a href="../Tours/razrabotka.html">Кишинев</a><br>
+                    <a href="../Tours/razrabotka.html">Орхей</a><br>
+                    <a href="../Tours/razrabotka.html">Усадьба Мими</a><br>
+                    <a href="../Tours/razrabotka.html">Приднестровье</a><br>
+                    <a href="../Tours/Gagauz.html">Гагаузия</a><br>
+                    </div>
+                </div>
+                <a id="nav-item" href="Feedback/site.html">Отзывы</a>
+                <a id="nav-item" href="About/site.html">О нас</a>
+                
+            </div> 
+        </div>
+        <a id="nav-item-sign" href="../Sign/site.html"><button id="signin">Войти</button></a>
+    </header>
+    <div id="top">
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100">
+                    <div class="login100-form-title" style="background-image: url(image/Registration.jpeg);">
+                    </div>
+    
+                    <form class="login100-form validate-form">
+                        <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+                            <span class="label-input100">Имя пользователя</span>
+                            <input class="input100" type="text" name="username" placeholder="Введите имя пользователя">
+                            <span class="focus-input100"></span>
+                        </div>
+    
+                        <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+                            <span class="label-input100">Пароль</span>
+                            <input class="input100" type="password" name="pass" placeholder="Введите пароль">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+                            <span class="label-input100">Повторите пароль</span>
+                            <input class="input100" type="password" name="pass" placeholder="Введите пароль">
+                            <span class="focus-input100"></span>
+                        </div>
+   
+                        <div class="container-login100-form-btn">
+                            <button class="login100-form-btn">
+                                <a href="../Sign/site.html" class="registration">
+                                Зарегистрироваться
+                                </a>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+
+        <div class="footer-left">
+            <h3>Inter-Tour </h3><br>
+            <p class="footer-company-name">Inter-Tour&copy; 2021</p><br>
+            <div id="ontop" onclick="slowScroll('#top')">
+                <p onclick="slowScroll('#top')">ON TOP</p>
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <div class="map">
+                <img src="image/map.png" class="image">
+                <p>Республика Молдова<br> 
+                г.Кишинев
+                <br> ул.Пушкина 28</p>
+            </div>
+            <div class="phone">
+                <img src="image/phone.png" class="image">
+                <p>+373 (022)864 511</p>
+            </div>
+            <div class="mail">
+                <img src="image/mail.png" class="image">
+                <p>inter-tour.gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-net">
+                <span>Соц сети</span> Также вы можете следить за новостями в следующих соц сетях
+            </p>
+
+            <div class="footer-icons">
+                <a class="facebook" href="https://www.facebook.com/"><img src="image/facebook.png" class="image"></a>
+                <a class="instagram" href="https://www.instagram.com/"><img src="image/inst.png" class="image"></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        $(document).on("scroll", function() {
+            if ($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+
+        function slowScroll(ontop) {
+            $('html,body').animate({
+                scrollTop: $(ontop).offset().top
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>

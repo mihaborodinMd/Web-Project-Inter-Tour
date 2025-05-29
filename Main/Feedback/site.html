@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter-Tour</title>
+    <link rel="icon" href="image/earth.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <span><a href="../site.html">Inter-Tour</a></span>
+        </div>
+
+        <div id="about">
+            <div id="dropdown-nav">
+                <button class="navigation">Навигация</button>
+                <div id="dropdown-menu">
+                    <a href="../Tours/site.html">Туры</a>
+                    <a href="../Feedback/site.html">Отзывы</a>
+                    <a href="../About/site.html">О нас</a>
+                    <a href="../Sign/Registration.html">Регистрация</a>
+                    <a href="../Sign/site.html">Вход</a>
+                </div>
+            </div>
+
+            <div id="navbar">
+                <div id="dropdown">
+                    <button id="dropbtn"><a href="../Tours/site.html">Туры</a></button>
+                    <div id="dropdown-content">
+                        <a href="../Tours/razrabotka.html">Кишинев</a><br>
+                        <a href="../Tours/razrabotka.html">Орхей</a><br>
+                        <a href="../Tours/razrabotka.html">Усадьба Мими</a><br>
+                        <a href="../Tours/razrabotka.html">Приднестровье</a><br>
+                        <a href="../Tours/Gagauz.html">Гагаузия</a><br>
+                    </div>
+                </div>
+                <a id="nav-item" href="../Feedback/site.html">Отзывы</a>
+                <a id="nav-item" href="../About/site.html">О нас</a>
+            </div>
+        </div>
+        <a id="nav-item-sign" href="../Sign/site.html"><button id="signin">Войти</button></a>
+    </header>
+    <div id="top">
+        <h1>Отзывы</h1>
+    </div>
+    <div id="feedback">
+
+        <div class="container">
+            <img src="image/wavatar.png" alt="Woman_Avatar" style="width:90px">
+            <p><span>Rebeca Poldman</span></p>
+            <p>Очень хорошие ребята, можно сказать лучшие на рынке. У них самое лучшее ценообразование. Порадовала также работа поддержки.У нас проблеммы с перевозимым животным нам очень быстро помогли. </p>
+        </div>
+
+        <div class="container">
+            <img src="image/mavatar.png" alt="Man_Avatar" style="width:90px">
+            <p><span>Ion Ceban</span></p>
+            <p>Не мог найти нормальную цену для отдыха , когда зашел на данный сайт подумал обман. На самом деле оказались приятные люди , которым моя семья благодарна за отличный отдых на Бали.</p>
+        </div>
+    </div>
+    <div id="contacts">
+        <center>
+            <h5>А что вы думаете ?</h5>
+        </center>
+        <form id="form_input">
+            <label for="name">Имя<span>*</span></label><br>
+            <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+            <label for="email">Ваша почта<span>*</span></label><br>
+            <input type="email" placeholder="Введите email" name="email" id="email"><br>
+            <label for="message">Сообщение<span>*</span></label><br>
+            <textarea placeholder="Введите ваше сообщение" name="message" id=",message"></textarea><br>
+            <div id="mess_send" class="btn">Отправить</div>
+        </form>
+    </div>
+    <footer class="footer">
+
+        <div class="footer-left">
+            <h3>Inter-Tour </h3><br>
+            <p class="footer-company-name">Inter-Tour&copy; 2021</p><br>
+            <div id="ontop" onclick="slowScroll('#top')">
+                <p onclick="slowScroll('#top')">ON TOP</p>
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <div class="map">
+                <img src="image/map.png" class="image">
+                <p>Республика Молдова<br> г.Кишинев
+                    <br> ул.Пушкина 28</p>
+            </div>
+            <div class="phone">
+                <img src="image/phone.png" class="image">
+                <p>+373 (022)864 511</p>
+            </div>
+            <div class="mail">
+                <img src="image/mail.png" class="image">
+                <p>inter-tour.gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-net">
+                <span>Соц сети</span> Также вы можете следить за новостями в следующих соц сетях
+            </p>
+
+            <div class="footer-icons">
+                <a class="facebook" href="https://www.facebook.com/"><img src="image/facebook.png" class="image"></a>
+                <a class="instagram" href="https://www.instagram.com/"><img src="image/inst.png" class="image"></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        $(document).on("scroll", function() {
+            if ($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+
+        function slowScroll(ontop) {
+            $('html,body').animate({
+                scrollTop: $(ontop).offset().top
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>
